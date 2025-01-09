@@ -55,8 +55,19 @@ void loop()
   Serial.print("Distance: ");
   Serial.print(result);
   Serial.println("cm");
+
+  // Wait a bit
+  delay(200);
 }
 ```
+
+## Troubleshooting
+- Check wiring and pin connections
+- Try detecting another surface (for example, a wall)
+- Try moving the object closer (but not too close)
+
+As some have mentioned, the sensor has a hard time detecting "soft" surfaces,
+try a harder one like a wall or book
 
 ## Credits
 - Thanks to Nicholas_N for the great guide on the HY-SRF05 [link](https://projecthub.arduino.cc/Nicholas_N/distance-measurement-with-an-ultrasonic-sensor-hy-srf05-bf2923)
